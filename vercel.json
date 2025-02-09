@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "build": {
+    "buildCommand": "chmod +x node_modules/.bin/tsc && npm run build"
+  }
+}
