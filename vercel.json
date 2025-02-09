@@ -9,9 +9,7 @@
       }
   ],
   "routes": [
-      {
-          "src": "/(.*)",
-          "dest": "dist/index.js"
-      }
-  ]
+  { "src": "/api/classify-number", "dest": "dist/index.js" },
+  { "src": "/", "dest": "dist/index.js" } 
+]
   }
