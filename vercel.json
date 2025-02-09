@@ -1,7 +1,17 @@
+
 {
   "version": 2,
-  "buildCommand": "chmod +x node_modules/.bin/tsc && npm run build",
-  "installCommand": "npm install",
-  "devCommand": "npm run start",
-  "startCommand": "npm run start"
-}
+  "builds": [
+      {
+          "src": "dist/index.js",
+          "use": "@vercel/node",
+          "config": { "includeFiles": ["dist/**"] }
+      }
+  ],
+  "routes": [
+      {
+          "src": "/(.*)",
+          "dest": "dist/index.js"
+      }
+  ]
+  }
