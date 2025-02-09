@@ -1,6 +1,7 @@
 {
   "version": 2,
-  "build": {
-    "buildCommand": "chmod +x node_modules/.bin/tsc && npm run build"
-  }
+  "buildCommand": "chmod +x node_modules/.bin/tsc && npm run build",
+  "installCommand": "npm install",
+  "devCommand": "npm run start",
+  "startCommand": "npm run start"
 }
